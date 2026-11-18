@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>Mini Project: Accessible Student Admission Page</title>
+    </head>
+    <body>
+
+        <header>
+            <h1 align="center">ABC College Admission 2026</h1>
+        </header>
+
+        <main>
+
+            <h2 align="center">Courses and Fees</h2>
+
+            <table border="1" cellpadding="5" align="center">
+                <caption>Available Courses</caption>
+
+                <tr>
+                    <th>Course</th>
+                    <th>Seats</th>
+                    <th>Fees</th>
+                </tr>
+
+                <tr>
+                    <td>B.Tech CSE</td>
+                    <td>120</td>
+                    <td>₹90,000</td>
+                </tr>
+
+                <tr>
+                    <td>BCA</td>
+                    <td>60</td>
+                    <td>₹45,000</td>
+                </tr>
+            </table>
+
+            <br>
+
+            <form align="center" action="" method="post">
+                <fieldset align="center">
+                
+                    <legend align="center">Application Form</legend>
+
+                    <label for="name">Name:</label>
+                    <br>
+                    <input type="text" id="name" name="name" required>
+                    <br><br>
+
+                    <label for="email">Email:</label>
+                    <br>
+                    <input type="email" id="email" name="email" required>
+                    <br><br>
+
+                    <label for="course">Course:</label>
+                    <br>
+                    <select id="course" name="course">
+                        <option>B.Tech CSE</option>
+                        <option>BCA</option>
+                    </select>
+                    <br><br>
+
+                    <label for="statement">Statement:</label>
+                    <br>
+                    <textarea id="statement" name="statement"
+                    rows="4" cols="40"></textarea>
+                    <br><br>
+
+                    <button type="submit">Apply</button>
+                </fieldset>    
+                
+
+            </form>
+
+        </main>
+
+        <footer>
+            <p align="center">© 2026 ABC College</p>
+        </footer>
+
+    </body>
+</html>
