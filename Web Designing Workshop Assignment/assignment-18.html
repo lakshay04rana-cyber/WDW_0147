@@ -1,81 +1,89 @@
 <html>
     <head>
-        <title>Mini Project: Accessible Student Admission Page</title>
+        <title>ABC College Admission</title>
     </head>
     <body>
 
-        <header>
-            <h1 align="center">ABC College Admission 2026</h1>
-        </header>
+        <table width="80%" align="center" bgcolor="white" cellpadding="10">
 
-        <main>
+            <tr bgcolor="#1d287f">
+                <td align="center">
+                    <font color="white">
+                        <h1>ABC College Admission 2026</h1>
+                    </font>
+                </td>
+            </tr>
 
-            <h2 align="center">Courses and Fees</h2>
+            <tr>
+                <td>
 
-            <table border="1" cellpadding="5" align="center">
-                <caption>Available Courses</caption>
+                    <h2>Courses and Fees</h2>
 
-                <tr>
-                    <th>Course</th>
-                    <th>Seats</th>
-                    <th>Fees</th>
-                </tr>
+                    <table border="1" width="80%" align="center" cellpadding="5">
+                        <caption>Available Courses</caption>
 
-                <tr>
-                    <td>B.Tech CSE</td>
-                    <td>120</td>
-                    <td>₹90,000</td>
-                </tr>
+                        <tr bgcolor="#e8e8f5">
+                            <th>Course</th>
+                            <th>Seats</th>
+                            <th>Fees</th>
+                        </tr>
 
-                <tr>
-                    <td>BCA</td>
-                    <td>60</td>
-                    <td>₹45,000</td>
-                </tr>
-            </table>
+                        <tr>
+                            <td>B.Tech CSE</td>
+                            <td>120</td>
+                            <td>₹90,000</td>
+                        </tr>
 
-            <br>
+                        <tr>
+                            <td>BCA</td>
+                            <td>60</td>
+                            <td>₹45,000</td>
+                        </tr>
+                    </table>
 
-            <form align="center" action="" method="post">
-                <fieldset align="center">
-                
-                    <legend align="center">Application Form</legend>
-
-                    <label for="name">Name:</label>
                     <br>
-                    <input type="text" id="name" name="name" required>
-                    <br><br>
 
-                    <label for="email">Email:</label>
-                    <br>
-                    <input type="email" id="email" name="email" required>
-                    <br><br>
+                    <form action="submit.php" method="post" align="center">
 
-                    <label for="course">Course:</label>
-                    <br>
-                    <select id="course" name="course">
-                        <option>B.Tech CSE</option>
-                        <option>BCA</option>
-                    </select>
-                    <br><br>
+                        <fieldset>
+                            <legend align="center">Application Form</legend>
 
-                    <label for="statement">Statement:</label>
-                    <br>
-                    <textarea id="statement" name="statement"
-                    rows="4" cols="40"></textarea>
-                    <br><br>
+                            <label for="name">Name:</label>
+                            <br>
+                            <input type="text" id="name" name="name" size="30" required>
+                            <br><br>
 
-                    <button type="submit">Apply</button>
-                </fieldset>    
-                
+                            <label for="email">Email:</label>
+                            <br>
+                            <input type="email" id="email" name="email" size="30" required>
+                            <br><br>
 
-            </form>
+                            <label for="course">Course:</label>
+                            <br>
+                            <select id="course" name="course">
+                                <option>B.Tech CSE</option>
+                                <option>BCA</option>
+                            </select>
+                            <br><br>
 
-        </main>
+                            <label for="statement">Statement:</label>
+                            <br>
+                            <textarea id="statement" name="statement"
+                            rows="4" cols="50"></textarea>
+                            <br><br>
 
-        <footer>
-            <p align="center">© 2026 ABC College</p>
-        </footer>
+                            <button type="submit">Apply</button>
+
+                        </fieldset>
+
+                    </form>
+
+                </td>
+            </tr>
+
+            
+
+        </table>
 
     </body>
 </html>
